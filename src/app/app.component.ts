@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'demo-project';
+
+  constructor() {
+    let a = 4;
+    for (let i = 0; i <= 10; i++) {
+      a = a * i;
+      console.log(a);
+
+    }
+  }
 }
