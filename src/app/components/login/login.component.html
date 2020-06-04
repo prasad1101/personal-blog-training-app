@@ -1,3 +1,16 @@
-<input type="text" placeholder="username">
-<input type="password">
-<button (click)="login()">Login</button>
+<div _ngcontent-kki-c2="" id="video-container">
+    <div _ngcontent-kki-c2="" class="video-overlay"></div>
+    <div _ngcontent-kki-c2="" class="video-content">
+        <div _ngcontent-kki-c2="" class="inner">
+            <h2 class="text-white">Welcome to the blogging site</h2>
+
+            <input class="p-2 m-2" type="text" [(ngModel)]="userData.userName" placeholder="Enter Username">
+            <br>
+            <input class="p-2 m-2" [placeholder]="placeholder" [(ngModel)]="userData.password" type="password">
+            <br>
+
+            <button class="p-2 m-2 btn btn-danger" (click)="login()">Login</button>
+        </div>
+    </div><video _ngcontent-kki-c2="" autoplay="" loop="" muted="">
+        <source _ngcontent-kki-c2="" src="assets/img/highway-loop.mp4" type="video/mp4"></video>
+</div>

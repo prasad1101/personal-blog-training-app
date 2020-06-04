@@ -13,8 +13,24 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
+  placeholder = "enter a password";
+
+  userData = {
+    userName: "ankita",
+    password: ""
+  }
+
+
   login() {
-    this.router.navigateByUrl("home");
+
+    console.log(this.userData)
+    if (this.userData.userName && this.userData.password) {
+      alert("login successful!")
+      this.router.navigateByUrl("home");
+    } else {
+      alert("username or password incorrect")
+    }
+
   }
 
 }
